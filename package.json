@@ -1,0 +1,46 @@
+{
+  "name": "genesis-prototype",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --mode pages --base=/Referral-forms/ --outDir docs",
+    "lint": "oxlint",
+    "test": "node --experimental-strip-types --test src/formBuilderModel.test.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emisgroup/design-tokens": "^3.0.11",
+    "@emisgroup/ui-accordion": "^4.0.2",
+    "@emisgroup/ui-button": "^6.0.1",
+    "@emisgroup/ui-checkbox": "^3.0.1",
+    "@emisgroup/ui-detail-panel": "^8.0.1",
+    "@emisgroup/ui-dialog": "^9.0.2",
+    "@emisgroup/ui-dropdown": "^5.0.1",
+    "@emisgroup/ui-icon": "^4.0.1",
+    "@emisgroup/ui-input": "^3.0.1",
+    "@emisgroup/ui-radio-button": "^4.0.1",
+    "@emisgroup/ui-search-dropdown": "^0.1.1",
+    "@emisgroup/ui-sections": "^4.0.1",
+    "@emisgroup/ui-table": "^4.0.3",
+    "@emisgroup/ui-tabs": "^8.0.1",
+    "@emisgroup/ui-tag": "^6.0.1",
+    "axios": "^1.20.0",
+    "iconify-icon": "^3.0.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "axe-core": "^4.14.0",
+    "oxlint": "^1.79.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}

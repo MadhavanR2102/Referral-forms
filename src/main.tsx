@@ -1,0 +1,11 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import '@emisgroup/design-tokens/build/css/variables.css'
+import './index.css'
+import App from './App.tsx'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

@@ -1,0 +1,58 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: #f5f5f7;
+}
+
+.demo-panel {
+  width: min(640px, 100%);
+  background: white;
+  border: 1px solid #e3e2e6;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3b78bd;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0.75rem 0 1.5rem;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.status-row {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f4f7fb;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+}
+
+.status-label {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.status-row strong {
+  color: #111827;
+  font-size: 1.2rem;
+}
